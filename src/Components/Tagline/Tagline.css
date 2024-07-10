@@ -9,8 +9,39 @@
     font-size: 60px;
     line-height: 72px;
     letter-spacing: 0.075em;
-}
-
-.tagline-top{
+  }
+  
+  .tagline-top {
     text-align: right;
-}
+  }
+  
+@media (max-width: 768px) {
+    .tagline {
+      width: 90%;
+      margin-top: 6rem;
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .tagline {
+      width: 100%;
+      margin-top: 3rem;
+      font-size: 35px;
+      line-height: 42px;
+    }
+  
+    .tagline-top {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 399px) {
+    .tagline {
+      margin-top: 2rem;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+    

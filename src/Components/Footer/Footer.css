@@ -1,48 +1,48 @@
-#footer{
+#footer {
     background-color: black;
     height: 60rem;
     padding: 5.75rem;
-}
-.foot{
+  }
+  .foot {
     height: 50rem;
-}
-.cont1{
+  }
+  .cont1 {
     height: 14rem;
     padding-left: 0.5rem;
-}
-.con1 h1{
+  }
+  .con1 h1 {
     font-family: "Druk Wide Trial", sans-serif;
     font-size: 8rem;
     font-weight: 800;
-}
-.cont2{
+  }
+  .cont2 {
     height: 33rem;
     padding: 1.685rem;
-}
-.con2{
+  }
+  .con2 {
     height: 24.5rem;
-    border-top:2px solid #C6F806;
-    border-bottom:2px solid #C6F806;
+    border-top: 2px solid #C6F806;
+    border-bottom: 2px solid #C6F806;
     padding-top: 1.375rem;
     padding-bottom: 1.375rem;
     display: flex;
-}
-.f1{
+  }
+  .f1 {
     height: 21rem;
     width: 50rem;
-}
-.sec1{
+  }
+  .sec1 {
     height: 11.31rem;
     width: 19.625rem;
     padding-top: 2.5rem;
     margin-bottom: 4rem;
-}
-.text1{
+  }
+  .text1 {
     font-family: "Atyp Display", sans-serif;
     font-size: 1rem;
     margin-bottom: 1.5rem;
-}
-.link{
+  }
+  .link {
     border: 1px solid white;
     display: flex;
     gap: 1.5rem;
@@ -52,16 +52,17 @@
     padding-left: 1rem;
     text-align: center;
     line-height: 2rem;
-}
-.f2{
+  }
+  .f2 {
     height: 21rem;
     width: 15rem;
-    border-left:1px solid #fff;
-    border-right:1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
     padding-left: 2.2rem;
     padding-bottom: 2rem;
-}
-.menu,.contact{
+  }
+  .menu,
+  .contact {
     font-family: "Atyp Display", sans-serif;
     font-size: 1rem;
     margin: 0px auto;
@@ -72,31 +73,30 @@
     justify-content: center;
     gap: 1.75rem;
     align-items: left;
-}
-.contact{
+  }
+  .contact {
     justify-content: left;
-}
-.f3{
+  }
+  .f3 {
     width: 15rem;
     height: 21rem;
     padding-top: 0.1rem;
     padding-left: 2.5rem;
     font-family: "Atyp Display", sans-serif;
-}
-.cont3{
+  }
+  .cont3 {
     height: 3rem;
     display: flex;
     padding-left: 1.65rem;
-    gap:37rem;
+    gap: 37rem;
     align-items: center;
-
-}
-.a{
+  }
+  .a {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.b{
+  }
+  .b {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,9 +105,104 @@
     color: black;
     background-color: #fff;
     font-size: 1.15rem;
-}
-.right{
+  }
+  .right {
     display: flex;
     gap: 2rem;
     height: 100%;
-}
+  }
+  
+@media (max-width: 768px) {
+    #footer {
+      padding: 2rem;
+      height: auto;
+    }
+  
+    .cont1 {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .con1 h1 {
+      font-size: 6rem;
+    }
+  
+    .con2 {
+      flex-direction: column;
+      border: none;
+      padding: 1rem 0;
+    }
+  
+    .f1, .f3 {
+      width: 100%;
+      padding: 1rem 0;
+    }
+  
+    .f2 {
+      display: none;
+    }
+  
+    .cont3 {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .right {
+      gap: 1rem;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    #footer {
+      padding: 1rem;
+    }
+  
+    .con1 h1 {
+      font-size: 5rem;
+    }
+  }
+  
+  @media (max-width: 399px) {
+    .cont1 {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .con1 h1 {
+      font-size: 4rem;
+    }
+  
+    .con2 {
+      display: flex;
+      flex-direction: column;
+      border: none;
+    }
+  
+    .f1, .f3 {
+      width: 100%;
+      border-bottom: 1px solid white;
+      padding: 1rem 0;
+    }
+  
+    .f3 {
+      border-bottom: none;
+    }
+  
+    .f2 {
+      display: none;
+    }
+  
+    .cont3 {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .right {
+      gap: 1rem;
+      flex-direction: column;
+    }
+  }
+  

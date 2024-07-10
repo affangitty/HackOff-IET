@@ -29,7 +29,6 @@
   overflow-x: hidden;
   position: relative;
   left: -20px;
-  /* display: none; */
 }
 
 .coming-soon {
@@ -51,5 +50,46 @@
   }
   100% {
     transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-logo-img {
+    height: 7rem;
+    margin-top: 10rem;
+  }
+
+  .coming-soon-container {
+    width: 100%;
+    left: 0;
+  }
+
+  .coming-soon div {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-main {
+    height: auto;
+  }
+
+  .hero-logo-img {
+    height: 5rem;
+    margin-top: 5rem;
+  }
+
+  .coming-soon div {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .hero-logo-img {
+    margin-top: 2rem;
+  }
+
+  .coming-soon div {
+    font-size: 1.5rem;
   }
 }

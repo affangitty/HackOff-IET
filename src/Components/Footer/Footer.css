@@ -1,0 +1,69 @@
+#footer{
+    background-color: black;
+    height: 60rem;
+    padding: 5.75rem;
+}
+.foot{
+    height: 52rem;
+}
+.cont1{
+    height: 14rem;
+    padding-left: 0.5rem;
+}
+.con1 h1{
+    font-family: "Druk Wide Trial", sans-serif;
+    font-size: 8rem;
+    font-weight: 800;
+}
+.cont2{
+    height: 33.86rem;
+    padding: 1.685rem;
+}
+.con2{
+    height: 24.5rem;
+    border-top:2px solid #C6F806;
+    border-bottom:2px solid #C6F806;
+    padding-top: 1.375rem;
+    padding-bottom: 1.375rem;
+    display: flex;
+}
+.f1{
+    height: 21rem;
+    width: 51rem;
+}
+.sec1{
+    height: 11.31rem;
+    width: 19.625rem;
+    padding-top: 2.5rem;
+    margin-bottom: 4rem;
+}
+.text1{
+    font-family: "Atyp Display", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.link{
+    border: 1px solid white;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    width: 13.8rem;
+    padding: 0.9rem;
+    padding-left: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
+.f2{
+    background-color: beige;
+    height: 19.75rem;
+    width: 15rem;
+    /* background-color: aqua; */
+}
+.f3{
+    background-color: blue;
+    height: 17.75rem;
+}
+.cont3{
+    background-color: blue;
+    height: 3rem;
+}

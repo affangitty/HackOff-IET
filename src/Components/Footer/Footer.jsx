@@ -20,7 +20,7 @@ const Footer = () => {
                 <p>A FLAGSHIP HACKATHON BY:</p>
               </div>
               <div className="img1">
-                <img src={iet} height="100rem" />
+                <img src={iet} />
               </div>
             </div>
             <div className="link">

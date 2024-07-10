@@ -3,9 +3,13 @@ nav {
   margin-left: auto;
   margin-right: auto;
   z-index: 100;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
   top: 2rem;
+  background-color: black;
 }
+
 nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -21,11 +25,33 @@ nav ul {
 nav ul li {
   font-size: 1rem;
   font-family: "Rethink Sans", sans-serif;
+  cursor: pointer;
 }
 
 nav ul li img {
   height: 100%;
 }
+
 .navbar-logo-container {
   height: 1.5rem;
+}
+
+.mobile {
+  justify-content: space-between;
+  padding: 0 1rem;
+  width: 15rem;
+}
+
+.navbar-menu {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 2rem;
+  height: 5rem;
+  background-color: #c6f806;
+  color: black;
+  width: 15rem;
+  margin-top: 1rem;
+  border-radius: 23px;
+  font-weight: 800;
 }

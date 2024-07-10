@@ -1,18 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo-small.png";
+import cross from "../../assets/cross.png";
+import hamburger from "../../assets/hamburger.png";
 
 const Navbar = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav>
-      <ul>
+      <ul className={`${isMobile ? "mobile" : ""}`}>
         <li className="navbar-logo-container">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Logo" />
         </li>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        {isMobile ? (
+          <li
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <img src={cross} alt="x" />
+            ) : (
+              <img src={hamburger} alt="=" />
+            )}
+          </li>
+        ) : (
+          <>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </>
+        )}
       </ul>
+      {isMobile && isMenuOpen && (
+        <ul className="navbar-menu">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      )}
     </nav>
   );
 };

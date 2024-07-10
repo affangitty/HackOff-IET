@@ -12,14 +12,14 @@
 
 .hero-logo-img {
   height: 10rem;
-  margin-top: 12rem;
+  margin-top: 17rem;
   box-shadow: 0px 0px 10000px 150px black;
   background-color: black;
 }
 
 .coming-soon-container {
   height: 6rem;
-  margin-top: 6rem;
+  margin-top: 4rem;
   background-color: #c6f806;
   transform: rotate(-5deg);
   display: flex;
@@ -29,6 +29,7 @@
   overflow-x: hidden;
   position: relative;
   left: -20px;
+  /* display: none; */
 }
 
 .coming-soon {

@@ -66,22 +66,3 @@ nav ul li img {
   }
 }
 
-@media (max-width: 425px) {
-  nav ul {
-    width: 15rem;
-  }
-
-  .navbar-menu {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 399px) {
-  nav ul {
-    width: 15rem;
-  }
-
-  .navbar-menu {
-    width: 15rem;
-  }
-}

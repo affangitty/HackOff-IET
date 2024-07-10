@@ -69,27 +69,3 @@
   }
 }
 
-@media (max-width: 425px) {
-  .hero-main {
-    height: auto;
-  }
-
-  .hero-logo-img {
-    height: 5rem;
-    margin-top: 5rem;
-  }
-
-  .coming-soon div {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 399px) {
-  .hero-logo-img {
-    margin-top: 2rem;
-  }
-
-  .coming-soon div {
-    font-size: 1.5rem;
-  }
-}

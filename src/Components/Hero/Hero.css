@@ -1,5 +1,7 @@
 .hero-main {
   background: url("../../assets/Background.png");
+  background-color: rgba(198, 248, 6, 0.2);
+  height: 100vh;
 }
 
 .hero-logo {
@@ -10,12 +12,14 @@
 
 .hero-logo-img {
   height: 10rem;
-  margin-top: 7rem;
+  margin-top: 12rem;
+  box-shadow: 0px 0px 10000px 150px black;
+  background-color: black;
 }
 
 .coming-soon-container {
   height: 6rem;
-  margin-top: 7.5rem;
+  margin-top: 6rem;
   background-color: #c6f806;
   transform: rotate(-5deg);
   display: flex;
@@ -42,7 +46,7 @@
 
 @keyframes moveText {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   100% {
     transform: translateX(100%);

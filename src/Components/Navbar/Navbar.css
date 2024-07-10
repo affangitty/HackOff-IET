@@ -1,8 +1,10 @@
 nav {
-  margin-top: 30px;
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  z-index: 100;
+  position: relative;
+  top: 2rem;
 }
 nav ul {
   display: flex;

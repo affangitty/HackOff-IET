@@ -8,6 +8,14 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <nav>
       <ul className={`${isMobile ? "mobile" : ""}`}>
@@ -15,9 +23,7 @@ const Navbar = () => {
           <img src={logo} alt="Logo" />
         </li>
         {isMobile ? (
-          <li
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+          <li onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? (
               <img src={cross} alt="x" />
             ) : (

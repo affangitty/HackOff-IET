@@ -34,7 +34,7 @@
 .coming-soon {
   display: flex;
   white-space: nowrap;
-  animation: moveText 10s linear infinite;
+  animation: moveText 30s linear infinite;
 }
 
 .coming-soon div {
